@@ -1,0 +1,174 @@
+/* General body styles */
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Specific font size adjustments */
+h1 {
+    color: #333;
+    font-size: 36px; /* Adjusted font size for h1 */
+}
+
+h2 {
+    color: #333;
+    font-size: 28px; /* Adjusted font size for h2 */
+}
+
+p {
+    color: #333;
+    font-size: 18px; /* Adjusted font size for paragraphs */
+}
+
+/* Button styles */
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Adjusted font size for buttons */
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+/* Message paragraph */
+#message {
+    margin-top: 20px;
+    font-size: 20px; /* Adjusted font size for message */
+}
+
+/* Link styles */
+a {
+    color: #008CBA;
+    text-decoration: none;
+    font-size: 18px; /* Adjusted font size for links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Adjusted font size for navbar links */
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar .toggle-menu {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+
+.navbar .toggle-menu {
+    display: none;
+}
+
+/* Ensure content is centered vertically */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjust based on navbar height */
+    margin-top: 60px; /* Ensure content is not hidden behind the navbar */
+}
+
+/* Section styles */
+section {
+    padding: 100px 20px;
+    width: 100%;
+    text-align: left;
+}
+
+#home {
+    text-align: center;
+}
+
+.responsive-img {
+    max-width: 150px;
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Space between images */
+}
+
+.tool-images, .learning-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between images */
+}
+
+.about-page .responsive-img{
+    max-width: 450px;
+}
+
+.contact-page .responsive-img{
+    max-width: 450px;
+}
